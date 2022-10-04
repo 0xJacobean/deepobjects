@@ -10,7 +10,9 @@ $( "#exit" ).click(function() {
 });
 
 $( "#exit-bg" ).click(function() {
+  if($(e.target).is("#exit-bg")) {
     $("#form-success").hide()
+  }
 });
 
 $( "#check-button" ).click(function() {
