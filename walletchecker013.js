@@ -5,6 +5,14 @@ let wallet = [
   "0x5678"
 ]
 
+$( "#exit" ).click(function() {
+  $("#form-success").hide()
+});
+
+$( "#exit-bg" ).click(function() {
+    $("#form-success").hide()
+});
+
 $( "#check-button" ).click(function() {
   
   $("#check-button").val('initializing...')
