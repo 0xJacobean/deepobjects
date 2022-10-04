@@ -13,7 +13,7 @@ $( "#check-button" ).click(function() {
 
   if (wallet.includes($("#address-field").val())) {
     console.log("clicked here", $("#address-field").val());
-    $("#success-message").val(`You are in The Cohort and will be able to mint on ${cohortMintDate}`);
+    $("#success-message").text(`You are in The Cohort and will be able to mint on ${cohortMintDate}`);
     $( "#form-success" ).show('slow');
   } else {
     $( "#form-error" ).hide('slow');
