@@ -9,7 +9,7 @@ $( "#exit" ).click(function() {
   $("#form-success").hide()
 });
 
-$( "#exit-bg" ).click(function() {
+$( "#exit-bg" ).click(function(e) {
   if($(e.target).is("#exit-bg")) {
     $("#form-success").hide()
   }
