@@ -8,11 +8,13 @@ let wallet = [
 
 $( ".exit" ).click(function() {
   $("#form-success").hide()
+  $("#form-error").hide()
 });
 
 $( ".fullscreen" ).click(function(e) {
   if($(e.target).is("#exit-bg")) {
     $("#form-success").hide()
+    $("#form-error").hide()
   }
 });
 
