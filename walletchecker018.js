@@ -28,7 +28,7 @@ $( "#check-button" ).click(function() {
     $( "#form-success" ).show('slow');
   } else {
     $("#error-message").text(errorMessage);
-    $( "#form-error" ).hide('slow');
+    $( "#form-error" ).show('slow');
   };
   
   $("#check-button").val('Check Address')
