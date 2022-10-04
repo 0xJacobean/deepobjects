@@ -6,10 +6,10 @@ let wallet = [
 ]
 
 $( "#check-button" ).click(function() {
-      console.log("clicked here", $("#address-field").text());
+      console.log("clicked here", $("#address-field").val());
 
-  if (wallet.includes($("#address-field").text())) {
-    console.log("clicked here", $("#address-field").text());
+  if (wallet.includes($("#address-field").val())) {
+    console.log("clicked here", $("#address-field").val());
     $("#success-message").val(`You are in The Cohort and will be able to mint on ${cohortMintDate}`);
     $( "#form-success" ).show('slow');
   } else {
