@@ -6,11 +6,11 @@ let wallet = [
   "0x5678"
 ]
 
-$( "#exit" ).click(function() {
+$( ".exit" ).click(function() {
   $("#form-success").hide()
 });
 
-$( "#exit-bg" ).click(function(e) {
+$( ".fullscreen" ).click(function(e) {
   if($(e.target).is("#exit-bg")) {
     $("#form-success").hide()
   }
