@@ -6,7 +6,10 @@ let wallet = [
 ]
 
 $( "#check-button" ).click(function() {
-      console.log("clicked here", $("#address-field").val());
+  
+  $("#check-button").val('initializing...')
+  
+  console.log("clicked here", $("#address-field").val());
 
   if (wallet.includes($("#address-field").val())) {
     console.log("clicked here", $("#address-field").val());
@@ -15,5 +18,7 @@ $( "#check-button" ).click(function() {
   } else {
     $( "#form-error" ).hide('slow');
   };
+  
+  $("#check-button").val('Check Address')
   
 });
