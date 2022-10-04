@@ -7,7 +7,7 @@ let wallet = [
 
 $( "#check-button" ).click(function() {
   if (wallet.includes($("#address-field").text())) {
-    console.log("clicked here", $("#address-field").text();
+    console.log("clicked here", $("#address-field").text());
     $("#success-message").val(`You are in The Cohort and will be able to mint on ${cohortMintDate}`);
     $( "#form-success" ).show('slow');
   } else {
