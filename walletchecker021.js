@@ -1,5 +1,6 @@
 let cohortMintDate = "10.10";
 let errorMessage = "Sorry, wallet not found"
+let successMessage = "You are in The Cohort."
 
 let wallet = [
   "0x1234",
@@ -26,7 +27,7 @@ $( "#check-button" ).click(function() {
 
   if (wallet.includes($("#address-field").val())) {
     console.log("clicked here", $("#address-field").val());
-    $("#success-message").text(`You are in The Cohort and will be able to mint on ${cohortMintDate}`);
+    $("#success-message").text(successMessage);
     $( "#form-success" ).show('slow');
   } else {
     $("#error-message").text(errorMessage);
