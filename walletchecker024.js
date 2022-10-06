@@ -10023,7 +10023,7 @@ $( "#check-button" ).click(function() {
   
   console.log("clicked here", $("#address-field").val());
 
-  if (wallet.includes($("#address-field").val())) {
+  if (wallet.map(w => w.toLowerCase()).includes($("#address-field").val().toLowerCase())) {
     console.log("clicked here", $("#address-field").val());
     $("#success-message").text(successMessage);
     $( "#form-success" ).show('slow');
